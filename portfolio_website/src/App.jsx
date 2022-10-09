@@ -10,6 +10,7 @@ import Testimonials from './components/testimonials/Testimonials.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
 
+//all self closing tags
 const app = () => {
   return (
     <>
