@@ -58,6 +58,7 @@ h1 {
 /* Comps wrapped section tag */
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 /* every section has dir child h2 and h5 tags */
