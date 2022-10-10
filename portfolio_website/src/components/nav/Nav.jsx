@@ -6,7 +6,7 @@ import { BiBook } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 import { AiOutlineFolder } from 'react-icons/ai'
-import { useState } from 'react'
+import { useState } from 'react' /*considered a 'hook'*/
 
 //could make an navbar icon comp w/ onClick events so don't need copy + paste
 const Nav = () => {

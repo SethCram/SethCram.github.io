@@ -98,13 +98,13 @@ a:hover {
 
 .btn:hover {
     background: var(--color-white);
-    color: var(--color-bg);
+    color: var(--color-bg-variant);
     border-color: transparent;
 }
 
 .btn-primary {
     background: var(--color-primary);
-    color: var(--color-bg);
+    color: var(--color-light); /*var(--color-bg);*/
 }
 
 img {
