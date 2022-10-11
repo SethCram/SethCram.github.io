@@ -3,7 +3,17 @@ import './work_history.css'
 import Micron from '../../assets/micron.png'
 import Uidaho from '../../assets/uidaho.jpg'
 
+// import Swiper core and required modules
+import { Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 /* map returns the arr while forEach doesn't return anything */
+/* Outer tag = parent tag */
 const Work_History = () => {
   const company_work_history = [
     {
@@ -34,6 +44,40 @@ const Work_History = () => {
     <section id='work_history'>
       <h5>Experience from previous employment</h5>
       <h2>Work History</h2>
+      <Swiper className='container work_history__container'
+      // install Swiper modules
+      modules={[Pagination]}
+                spaceBetween={40}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+      >
+        {
+          company_work_history.map(({ id, logo, name, position, description }) => {
+            return (
+              <SwiperSlide key={id} className='work_history'>
+                <div className='company__logo'>
+                  <img src={logo} alt={name} />
+                </div>
+                <h6 className='company__name' >{name}</h6>
+                <h5 className='company__position'>{position}</h5>
+                  <small className='company__description'>
+                  <ul>
+                    {
+                      description.map((sentence, index) => {              
+                        return (
+                          <li key={index}>{sentence}</li>
+                        )
+                      }
+                      )
+                    }
+                    </ul>
+                  </small>
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
+
       <div className='container work_history__container'>
         {
           company_work_history.map(({ id, logo, name, position, description }) => {
@@ -49,9 +93,7 @@ const Work_History = () => {
                     {
                       description.map((sentence, index) => {              
                         return (
-                          <div>
-                            <li key={index}>{sentence}</li>
-                          </div>
+                          <li key={index}>{sentence}</li>
                         )
                       }
                       )
