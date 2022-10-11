@@ -4,9 +4,7 @@ import ME from '../../assets/me_about.png'
 import { FaAward } from 'react-icons/fa'
 import { AiOutlineFolder } from 'react-icons/ai'
 
-//class AboutCard extends React.Component {
 function AboutCard({ icon, title, description }){
-  //render() {
     return (
       <article className='about__card'>
         {icon}
@@ -14,7 +12,6 @@ function AboutCard({ icon, title, description }){
         <small>{description}</small>
       </article>
     )
-  //}
 }
 
 const About = () => {

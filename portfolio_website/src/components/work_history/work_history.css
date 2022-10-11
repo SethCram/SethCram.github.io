@@ -19,6 +19,14 @@
     user-select: none;
 }
 
+.company__name {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
 .company__description {
     color: var(--color-light);
     font-weight: 300;
