@@ -19,7 +19,7 @@ Steps to reproduce the behavior:
 
 **Desktop (please complete the following information):**
  - OS: Windows
- - Game Version: 0.7.1
+ - Browser: Chrome
 
 **Additional context**
 - 
