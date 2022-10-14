@@ -78,34 +78,7 @@ const Work_History = () => {
           })
         }
       </Swiper>
-
-      <div className='container work_history__container'>
-        {
-          company_work_history.map(({ id, logo, name, position, description }) => {
-            return (
-              <article key={id} className='work_history'>
-                <div className='company__logo'>
-                  <img src={logo} alt={name} />
-                </div>
-                <h6 className='company__name' >{name}</h6>
-                <h5 className='company__position'>{position}</h5>
-                  <small className='company__description'>
-                  <ul>
-                    {
-                      description.map((sentence, index) => {              
-                        return (
-                          <li key={index}>{sentence}</li>
-                        )
-                      }
-                      )
-                    }
-                    </ul>
-                  </small>
-              </article>
-            )
-          })
-        }
-      </div>
+      
     </section>
   )
 }
