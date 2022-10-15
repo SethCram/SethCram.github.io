@@ -8,7 +8,7 @@
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 1rem;
-    border: 0.4rem solid var(--color-primary-variant);
+    border: 0.45rem solid var(--color-primary-variant);
 }
 
 .work_history {
@@ -33,6 +33,10 @@
     display: block;
     width: 80%;
     margin: 0.8rem auto 0;
+}
+
+.company__description > li {
+    list-style: circle;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
