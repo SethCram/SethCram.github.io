@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e0ae523.css",
-    "main.js": "/static/js/main.d7e8fd6a.js",
+    "main.css": "/static/css/main.d6706bee.css",
+    "main.js": "/static/js/main.fd3fc55e.js",
     "static/media/bg-texture.jpg": "/static/media/bg-texture.d9807e6a516e10c63675.jpg",
+    "static/media/website.PNG": "/static/media/website.4187417d38b5c53c3dae.PNG",
+    "static/media/Dungeon_Jump.png": "/static/media/Dungeon_Jump.8a015b97882485e34085.png",
+    "static/media/me_about.png": "/static/media/me_about.44680223d70443a06e83.png",
     "static/media/me.png": "/static/media/me.98e2c36fbec8e63e1695.png",
+    "static/media/BestBuySearch.PNG": "/static/media/BestBuySearch.c81aca81c379cc117b7a.PNG",
     "static/media/Software Resume.docx.pdf": "/static/media/Software Resume.docx.253b114951b8311e62bf.pdf",
+    "static/media/uidaho.jpg": "/static/media/uidaho.f72730fdf6c087dbc4e9.jpg",
     "index.html": "/index.html",
-    "main.4e0ae523.css.map": "/static/css/main.4e0ae523.css.map",
-    "main.d7e8fd6a.js.map": "/static/js/main.d7e8fd6a.js.map"
+    "main.d6706bee.css.map": "/static/css/main.d6706bee.css.map",
+    "main.fd3fc55e.js.map": "/static/js/main.fd3fc55e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e0ae523.css",
-    "static/js/main.d7e8fd6a.js"
+    "static/css/main.d6706bee.css",
+    "static/js/main.fd3fc55e.js"
   ]
 }
