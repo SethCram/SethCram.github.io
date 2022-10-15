@@ -54,6 +54,31 @@ input, textarea {
     color: var(--color-white);
 }
 
+/* ALERT */
+
+.contact__alert-container {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.contact__alert-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-shown {
+    opacity: 1;
+    transition: all 250ms linear;
+}
+
+.alert-hidden {
+    opacity: 0;
+    transition: all 250ms linear 3s; /* <- the last value defines transition-delay */
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
 /* For tablets */
