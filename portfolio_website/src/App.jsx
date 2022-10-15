@@ -23,7 +23,6 @@ const app = () => {
       <WorkHistory />
       <Contact />
       <Footer />
-      <Test />
     </div>
   )
 }

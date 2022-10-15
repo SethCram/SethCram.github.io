@@ -71,12 +71,12 @@ input, textarea {
 
 .alert-shown {
     opacity: 1;
-    transition: all 250ms linear;
+    transition: var(--transition);
 }
 
 .alert-hidden {
     opacity: 0;
-    transition: all 250ms linear 3s; /* <- the last value defines transition-delay */
+    transition: var(--transition) 3s; /* <- the last value defines transition-delay */
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
