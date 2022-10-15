@@ -9,7 +9,6 @@ import Portfolio from './components/portfolio/Portfolio.jsx'
 import WorkHistory from './components/workhistory/WorkHistory.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
-import Test from './components/workhistory/Test.jsx'
 
 //all self closing tags
 const app = () => {
