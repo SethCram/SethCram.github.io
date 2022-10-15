@@ -1,5 +1,6 @@
 .container.work_history__container {
     width: 40%;
+    /*padding-bottom: 4rem;*/ /*for moving dots outside of swiper box*/
 }
 
 .company__logo {
@@ -9,6 +10,10 @@
     border-radius: 50%;
     margin: 0 auto 1rem;
     border: 0.45rem solid var(--color-primary-variant);
+}
+
+.swiper-pagination-bullet-clickable .swiper-pagination-bullet-active {
+    background: var(--color-bg);
 }
 
 .work_history {
@@ -35,11 +40,7 @@
     margin: 0.8rem auto 0;
 }
 
-.company__description > li {
-    list-style: circle;
-}
-
-/* MEDIA QUERIES (MEDIUM DEVICES) */
+/* MEDIA QUERIES (MEDIUM DEVICES)  */
 
 /* For tablets */
 @media screen and (max-width: 1024px) {

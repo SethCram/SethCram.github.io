@@ -79,7 +79,7 @@
     color: var(--color-light);
 }
 
-/* MEDIA QUERIES (MEDIUM DEVICES) */
+/* MEDIA QUERIES (MEDIUM DEVICES)  */
 
 /* For tablets */
 @media screen and (max-width: 1024px) {
