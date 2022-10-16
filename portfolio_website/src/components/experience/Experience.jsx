@@ -51,8 +51,8 @@ const experience = () => {
     {id: 2, skill: 'CSS', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
     {id: 3, skill: 'HTML', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
     {id: 4, skill: 'React', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
-    {id: 5, skill: 'NodeJS', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
-    {id: 6, skill: 'Bootstrap', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon'/>},
+    {id: 5, skill: 'NodeJS', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
+    {id: 6, skill: 'Bootstrap', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon'/>},
   ];
   const other_specs = [
     {id: 1, skill: 'Git', proficiency: 'Advanced', icon: <BsPatchCheckFill className='experience__details-icon'/> }, 
