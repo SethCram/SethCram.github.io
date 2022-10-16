@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import Dungeon_Jump from '../../assets/Dungeon_Jump.png'
 import BestBuySearch from '../../assets/BestBuySearch.PNG'
-import Website from '../../assets/website.PNG'
+import Website from '../../assets/website1.PNG'
 
 /* {} indicated in JS mode */
 /* blank target opens inna new tab */
@@ -27,7 +27,7 @@ const Portfolio = () => {
       image: Dungeon_Jump,
       title: '2D Variable-Perspective Adventure Game',
       github: 'https://github.com/3khoin/CS383Spring2022',
-      product: '',
+      product: 'https://sethcram.weebly.com/dungeon-jump.html',
     }
   ]
   

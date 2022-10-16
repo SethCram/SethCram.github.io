@@ -32,7 +32,7 @@ const Work_History = () => {
       id: 2,
       logo: Uidaho,
       name: 'University of Idaho',
-      position: 'Communication\'s Officer',
+      position: 'Communications Officer',
       description: [
         'Networked with High Schools across the Northwest to garner excitement for a career in STEM',
         'Articulated technical challenges and solutions to non-technical people',
