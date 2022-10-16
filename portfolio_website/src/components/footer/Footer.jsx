@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       <div className='footer__copyright'>
-        <small>&copy; Seth Cram Portfolio Website. All right reserved. </small>
+        <small>Copyright &copy; 2022 | Seth Cram </small>
       </div>
 
     </footer>
