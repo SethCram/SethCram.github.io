@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.283e91ad.css",
-    "main.js": "/static/js/main.281e269a.js",
+    "main.js": "/static/js/main.8c557d68.js",
     "static/media/website.PNG": "/static/media/website.4187417d38b5c53c3dae.PNG",
     "static/media/Dungeon_Jump.png": "/static/media/Dungeon_Jump.8a015b97882485e34085.png",
     "static/media/me_about.png": "/static/media/me_about.44680223d70443a06e83.png",
@@ -11,10 +11,10 @@
     "static/media/uidaho.jpg": "/static/media/uidaho.f72730fdf6c087dbc4e9.jpg",
     "index.html": "/index.html",
     "main.283e91ad.css.map": "/static/css/main.283e91ad.css.map",
-    "main.281e269a.js.map": "/static/js/main.281e269a.js.map"
+    "main.8c557d68.js.map": "/static/js/main.8c557d68.js.map"
   },
   "entrypoints": [
     "static/css/main.283e91ad.css",
-    "static/js/main.281e269a.js"
+    "static/js/main.8c557d68.js"
   ]
 }
