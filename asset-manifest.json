@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6706bee.css",
+    "main.css": "/static/css/main.4c8c8b69.css",
     "main.js": "/static/js/main.fd3fc55e.js",
     "static/media/bg-texture.jpg": "/static/media/bg-texture.d9807e6a516e10c63675.jpg",
     "static/media/website.PNG": "/static/media/website.4187417d38b5c53c3dae.PNG",
@@ -11,11 +11,11 @@
     "static/media/Software Resume.docx.pdf": "/static/media/Software Resume.docx.253b114951b8311e62bf.pdf",
     "static/media/uidaho.jpg": "/static/media/uidaho.f72730fdf6c087dbc4e9.jpg",
     "index.html": "/index.html",
-    "main.d6706bee.css.map": "/static/css/main.d6706bee.css.map",
+    "main.4c8c8b69.css.map": "/static/css/main.4c8c8b69.css.map",
     "main.fd3fc55e.js.map": "/static/js/main.fd3fc55e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6706bee.css",
+    "static/css/main.4c8c8b69.css",
     "static/js/main.fd3fc55e.js"
   ]
 }
