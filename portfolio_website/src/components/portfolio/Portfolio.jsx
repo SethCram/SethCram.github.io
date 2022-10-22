@@ -14,6 +14,7 @@ const Portfolio = () => {
       title: 'Ecommerce Product Matching Site',
       github: 'https://github.com/SethCram/Best-Buy-Search-Project',
       product: 'https://sethcram.pythonanywhere.com/BestBuySearch/login/',
+      target: '_blank',
     },
     {
       id: 2,
@@ -21,23 +22,25 @@ const Portfolio = () => {
       title: 'React Portolio Website',
       github: 'https://github.com/SethCram/SethCram.github.io',
       product: 'https://sethcram.github.io/',
+      target: '_blank',
     },
     {
       id: 3,
       image: Dungeon_Jump,
       title: '2D Variable-Perspective Adventure Game',
       github: 'https://github.com/3khoin/CS383Spring2022',
-      product: 'https://sethcram.weebly.com/dungeon-jump.html',
+      product: '#games', //'https://sethcram.weebly.com/dungeon-jump.html',
+      target: ''
     }
   ]
-  
+
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className='container portfolio__container'>
         {
-          portfolioItems.map(({ id, image, title, github, product }) => {
+          portfolioItems.map(({ id, image, title, github, product, target }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className='portfolio__item-image'>
@@ -46,13 +49,14 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className='portfolio__item-cta'>
                   <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
-                  <a href={product} className='btn btn-primary' target='_blank' rel="noreferrer">Product</a>
+                  <a href={product} className='btn btn-primary' target={target} rel="noreferrer">Product</a>
                 </div>
               </article>
             )
           })
         }
       </div>
+
     </section>
   )
 }
