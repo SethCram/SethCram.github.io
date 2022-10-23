@@ -15,7 +15,7 @@ $(window).on('resize', showIframe);
 
 /* {} indicated in JS mode */
 /* blank target opens inna new tab */
-const Game = () => {
+const Games = () => {
 
   // Initialize it once on document ready
   showIframe();
@@ -25,11 +25,12 @@ const Game = () => {
       {/* should only render this if a game product button pressed */}
       <div className='container games__container'>
         <div className='games__item'>
-          <iframe src=""
+          <iframe src="https://rawcdn.githack.com/3khoin/CS383Spring2022/083f211d3a3599b28410e897bd05544de0cdb24b/Builds/Web-GL/index.html"
             data-src="https://rawcdn.githack.com/3khoin/CS383Spring2022/083f211d3a3599b28410e897bd05544de0cdb24b/Builds/Web-GL/index.html"
-            title="VRMap"
+            title="DungeonJump"
             scrolling="no"
-            allowFullScreen="false">
+            allowFullScreen={true}
+          >
 
             Browser not compatible.
 
@@ -41,4 +42,4 @@ const Game = () => {
   )
 }
 
-export default Game
+export default Games

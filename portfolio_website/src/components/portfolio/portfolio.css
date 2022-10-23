@@ -15,11 +15,6 @@
     text-align: center;
 }
 
-.portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
 .portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
@@ -39,6 +34,19 @@
 .portfolio__item-cta a {
     text-align: center;
     margin: 0 1rem 0 1rem;
+}
+
+.game-shown {
+    opacity: 1;
+    transition: var(--transition);
+    visibility: visible;
+}
+
+.game-hidden {
+    opacity: 0;
+    transition: var(--transition);
+    visibility: hidden;
+    height: 0;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES)  */

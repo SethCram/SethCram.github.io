@@ -57,15 +57,13 @@ const Contact = () => {
             link='https://www.linkedin.com/in/seth-cram/'
           />
           {/* Alert included in the contact options container */ }
-          {
-            <div
-              className={`contact__alert-container alert-success ${isAlertVisible ? 'alert-shown' : 'alert-hidden'}`}
-              onTransitionEnd={() => setIsAlertVisible(false)}
-            >
-              <BiMessageCheck className='contact__alert-icon' />
-              <h5>Message Sent</h5>
-            </div>
-          }
+          <div
+            className={`contact__alert-container alert-success ${isAlertVisible ? 'alert-shown' : 'alert-hidden'}`}
+            onTransitionEnd={() => setIsAlertVisible(false)}
+          >
+            <BiMessageCheck className='contact__alert-icon' />
+            <h5>Message Sent</h5>
+          </div>
         </div>
         {/* END OF CONTACT OPTIONS */ }
         <form ref={form} onSubmit={sendEmail}>
