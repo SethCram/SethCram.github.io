@@ -68,14 +68,14 @@ header {
 /* For tablets */
 @media screen and (max-width: 1024px) {
     header {
-        height: 80vh; /* height: 68vh; */ /* vh = viewport height*/
+        height:80vh;  /* height: 68vh; */ /* vh = viewport height*/
     }
 }
 
 /* For phones - don't display icons */
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 130vh; /*100vh;*/
     }
 
     .header__socials, .scroll__down {
