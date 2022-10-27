@@ -15,6 +15,11 @@
     text-align: center;
 }
 
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
 .portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
@@ -35,6 +40,8 @@
     text-align: center;
     margin: 0 1rem 0 1rem;
 }
+
+/* GAME TAGS*/
 
 .game-shown {
     opacity: 1;
