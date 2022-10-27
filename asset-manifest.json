@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.283e91ad.css",
-    "main.js": "/static/js/main.cdd03f5d.js",
+    "main.css": "/static/css/main.58f69b70.css",
+    "main.js": "/static/js/main.4486911c.js",
     "static/media/Dungeon_Jump.png": "/static/media/Dungeon_Jump.8a015b97882485e34085.png",
     "static/media/me_about.png": "/static/media/me_about.44680223d70443a06e83.png",
     "static/media/me.png": "/static/media/me.98e2c36fbec8e63e1695.png",
@@ -10,11 +10,11 @@
     "static/media/Software Resume.docx.pdf": "/static/media/Software Resume.docx.6b5ae1fc55fc5fab1544.pdf",
     "static/media/uidaho.jpg": "/static/media/uidaho.f72730fdf6c087dbc4e9.jpg",
     "index.html": "/index.html",
-    "main.283e91ad.css.map": "/static/css/main.283e91ad.css.map",
-    "main.cdd03f5d.js.map": "/static/js/main.cdd03f5d.js.map"
+    "main.58f69b70.css.map": "/static/css/main.58f69b70.css.map",
+    "main.4486911c.js.map": "/static/js/main.4486911c.js.map"
   },
   "entrypoints": [
-    "static/css/main.283e91ad.css",
-    "static/js/main.cdd03f5d.js"
+    "static/css/main.58f69b70.css",
+    "static/js/main.4486911c.js"
   ]
 }
