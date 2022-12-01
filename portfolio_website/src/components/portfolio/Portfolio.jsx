@@ -71,13 +71,15 @@ const Portfolio = () => {
           }
         </div>
       </section>
-    {
+    
       <div 
         className={`${activeGame ? 'game-shown' : 'game-hidden'}`}
       > 
-        <Games />
+        {activeGame &&
+          < Games />
+        }
+
       </div>
-    }
     </div>
   )
 }
