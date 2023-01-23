@@ -45,6 +45,7 @@ const experience = () => {
     {id: 5, skill: 'Java', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
     {id: 6, skill: '.NET', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
     {id: 7, skill: 'Django', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon'/>},
+    {id: 8, skill: 'MongoDB', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
   ];
   const frontend_specs = [
     {id: 1, skill: 'JavaScript', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon'/> }, 
@@ -58,8 +59,9 @@ const experience = () => {
     {id: 1, skill: 'Git', proficiency: 'Advanced', icon: <BsPatchCheckFill className='experience__details-icon'/> }, 
     {id: 2, skill: 'CI Pipelines', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon'/> }, 
     {id: 3, skill: 'Docker', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
-    {id: 4, skill: 'OpenShift', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
-    {id: 5, skill: 'ML', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
+    {id: 4, skill: 'Linux', proficiency: 'Advanced', icon: <BsPatchCheckFill className='experience__details-icon'/>},
+    {id: 5, skill: 'OpenShift', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
+    {id: 6, skill: 'ML', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
   ];
   /*
     {id: 5, skill: 'Linux OS', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
