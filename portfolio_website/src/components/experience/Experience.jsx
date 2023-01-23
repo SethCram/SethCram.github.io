@@ -61,7 +61,7 @@ const experience = () => {
     {id: 3, skill: 'Docker', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
     {id: 4, skill: 'Linux', proficiency: 'Advanced', icon: <BsPatchCheckFill className='experience__details-icon'/>},
     {id: 5, skill: 'OpenShift', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
-    {id: 6, skill: 'ML', proficiency: 'Basic', icon: <BsPatchCheckFill className='experience__details-icon' /> },
+    {id: 6, skill: 'ML', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
   ];
   /*
     {id: 5, skill: 'Linux OS', proficiency: 'Experienced', icon: <BsPatchCheckFill className='experience__details-icon' /> },
