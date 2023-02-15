@@ -33,8 +33,8 @@ const About = () => {
             <AboutCard icon=<AiOutlineFolder className='about__icon'/> title='Projects' description={'30+ Completed'} />
           </div>
           <p>
-            A driven Computer Engineering major excelling at his Senior year in a Bachelor's
-            degree. Proficient in a wide variety of programming languages. 
+            A senior computer engineering student graduating May, 2023 with a Bachelor's of Science. 
+            Proficient in a wide variety of programming languages. 
             Comprehensive understanding of efficient algorithms, data structures and fullstack development. 
             More than capable of producing excellence in a competitive environment. 
           </p>
