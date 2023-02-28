@@ -3,6 +3,7 @@ import './portfolio.css'
 import Dungeon_Jump from '../../assets/Dungeon_Jump.png'
 import BestBuySearch from '../../assets/BestBuySearch.PNG'
 import Website from '../../assets/website1.PNG'
+import Brick_Breaker from '../../assets/brick_breaker.PNG'
 import Games from '../games/Games.jsx'
 import { useState } from 'react' 
 
@@ -20,6 +21,7 @@ const Portfolio = () => {
       product: 'https://sethcram.pythonanywhere.com/BestBuySearch/login/',
       target: '_blank',
     },
+    /*
     {
       id: 2,
       image: Website,
@@ -28,23 +30,24 @@ const Portfolio = () => {
       product: 'https://sethcram.github.io/',
       target: '_blank',
     },
-    /*{
-      id: 3,
-      image: Dungeon_Jump,
-      title: '2D Variable-Perspective Adventure Game',
-      github: 'https://github.com/3khoin/CS383Spring2022',
-      product: 'https://sethcram.weebly.com/dungeon-jump.html', //'#games',
-      target: '_blank'
-    }*/
+    */
     {
-      id: 3,
+      id: 2,
       image: Dungeon_Jump,
       title: '2D Variable-Perspective Adventure Game',
       github: 'https://github.com/3khoin/CS383Spring2022',
       product: `${activeGame ? '#games' : 'javascript:void(0)'}`, //'#games', 
       target: '',
       onClick: () => setActiveGame(!activeGame), //invert active state of iframe code onclick()
-    }
+    },
+    {
+      id: 3,
+      image: Brick_Breaker,
+      title: 'Modernized Brick Breaker Game',
+      github: 'https://github.com/SethCram/Breakout-Clone',
+      product: 'https://sethcram.weebly.com/breakout-clone.html',
+      target: '_blank',
+    },
   ]
 
   return (

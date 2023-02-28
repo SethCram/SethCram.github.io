@@ -23,9 +23,10 @@ const Work_History = () => {
       name: 'Micron Technology',
       position: 'IT Software Engineer',
       description: [
-        'Followed the Agile software development methodology within a team of 20 developers',
-        'Refactored and deployed a .NET Core web service to OpenShift utilizing Docker',
-        'Trained in Micron\'s distributed communications system',
+        'Followed the Agile software development methodology within a team of 20 developers.',
+        'Converted a C# .NET Core Windows command line application into an API running on Linux.',
+        'Deployed a Linux API to Red Hat OpenShift utilizing Docker.',
+        'Trained in an XML/JSON-based distributed communications system',
       ]
     },
     {
@@ -34,9 +35,9 @@ const Work_History = () => {
       name: 'University of Idaho',
       position: 'Communications Officer',
       description: [
-        'Networked with High Schools across the Northwest to garner excitement for a career in STEM',
-        'Articulated technical challenges and solutions to non-technical people',
-        'Assisted in leading a group of nearly 30 engineers'
+        'Networked with High Schools across the Northwest to garner excitement for a career in STEM.',
+        'Articulated technical challenges and solutions to non-technical people.',
+        'Assisted in leading a group of nearly 30 engineers.'
       ]
     }
   ]
