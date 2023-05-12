@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import Dungeon_Jump from '../../assets/Dungeon_Jump.png'
 import BestBuySearch from '../../assets/BestBuySearch.PNG'
-import Website from '../../assets/website1.PNG'
+import Book_Club from '../../assets/Book_Club.PNG'
 import Brick_Breaker from '../../assets/brick_breaker.PNG'
 import Games from '../games/Games.jsx'
 import { useState } from 'react' 
@@ -15,6 +15,14 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
+      image: Book_Club,
+      title: 'Reputation Based Writing Platform',
+      github: 'https://github.com/SethCram/book-club',
+      product: 'https://book-club.us.to/',
+      target: '_blank',
+    },
+    {
+      id: 2,
       image: BestBuySearch,
       title: 'Ecommerce Product Matching Site',
       github: 'https://github.com/SethCram/Best-Buy-Search-Project',
@@ -32,7 +40,7 @@ const Portfolio = () => {
     },
     */
     {
-      id: 2,
+      id: 3,
       image: Dungeon_Jump,
       title: '2D Variable-Perspective Adventure Game',
       github: 'https://github.com/3khoin/CS383Spring2022',
@@ -41,7 +49,7 @@ const Portfolio = () => {
       onClick: () => setActiveGame(!activeGame), //invert active state of iframe code onclick()
     },
     {
-      id: 3,
+      id: 4,
       image: Brick_Breaker,
       title: 'Modernized Brick Breaker Game',
       github: 'https://github.com/SethCram/Breakout-Clone',
