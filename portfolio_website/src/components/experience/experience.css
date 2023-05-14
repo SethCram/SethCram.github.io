@@ -1,6 +1,6 @@
 .experience__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
@@ -62,6 +62,7 @@
 /* For phones */
 @media screen and (max-width: 600px) {
     .experience__container {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
