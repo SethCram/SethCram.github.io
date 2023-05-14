@@ -42,7 +42,7 @@ const Portfolio = () => {
     {
       id: 4,
       image: FT13_Game,
-      title: 'Multiplayer Team Focussed Game',
+      title: 'Multiplayer Team-Focussed Game',
       github: 'https://github.com/SethCram/Friday-the-13th-Game',
       product: `https://drive.google.com/drive/folders/1rkJ1HrhBPyzCM6HnGW3mtzlJ1LLmHoAJ?usp=sharing`, //'#games', 
       target: '_blank',
