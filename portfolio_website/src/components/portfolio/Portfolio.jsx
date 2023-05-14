@@ -1,4 +1,3 @@
-import React from 'react'
 import './portfolio.css'
 import Dungeon_Jump from '../../assets/Dungeon_Jump.png'
 import BestBuySearch from '../../assets/BestBuySearch.PNG'
@@ -13,6 +12,13 @@ import { useState } from 'react'
 /* blank target opens inna new tab */
 const Portfolio = () => {
   const [activeGame, setActiveGame] = useState(false) 
+  const GAME_TITLES = {
+    DUNGEON_JUMP: 1,
+    BRICK_BREAKER: 2,
+  }
+  const [currGameName, setCurrGameName] = useState(0); 
+
+  console.log(currGameName);
   
   const portfolioItems = [
     {
@@ -21,7 +27,6 @@ const Portfolio = () => {
       title: 'Reputation Based Writing Platform',
       github: 'https://github.com/SethCram/book-club',
       product: 'https://book-club.us.to/',
-      target: '_blank',
     },
     {
       id: 2,
@@ -29,7 +34,6 @@ const Portfolio = () => {
       title: 'Ecommerce Product Matching Site',
       github: 'https://github.com/SethCram/Best-Buy-Search-Project',
       product: 'https://sethcram.pythonanywhere.com/BestBuySearch/login/',
-      target: '_blank',
     },
     {
       id: 3,
@@ -37,7 +41,6 @@ const Portfolio = () => {
       title: 'AI Natural Language Interface to Databases',
       github: 'https://github.com/SethCram/Linguists-NLP-to-SQL',
       product: `https://github.com/SethCram/linguists-client`, //'#games', 
-      target: '_blank',
     },
     {
       id: 4,
@@ -45,26 +48,63 @@ const Portfolio = () => {
       title: 'Multiplayer Team-Focussed Game',
       github: 'https://github.com/SethCram/Friday-the-13th-Game',
       product: `https://drive.google.com/drive/folders/1rkJ1HrhBPyzCM6HnGW3mtzlJ1LLmHoAJ?usp=sharing`, //'#games', 
-      target: '_blank',
     },
     {
       id: 5,
       image: Dungeon_Jump,
       title: 'Variable-Perspective Adventure Game',
       github: 'https://github.com/3khoin/CS383Spring2022',
-      product: `${activeGame ? '#games' : 'javascript:void(0)'}`, //'#games', 
-      target: '',
-      onClick: () => setActiveGame(!activeGame), //invert active state of iframe code onclick()
+      isWebGame: true, 
+      gameTitle: GAME_TITLES.DUNGEON_JUMP,
+      onClick: () => { setActiveGame(!activeGame); setCurrGameName(GAME_TITLES.DUNGEON_JUMP);}, //invert active state of iframe code onclick()
     },
     {
       id: 6,
       image: Brick_Breaker,
       title: 'Breakout Variant & Gaming AI',
       github: 'https://github.com/SethCram/Breakout-Clone',
-      product: 'https://sethcram.weebly.com/breakout-clone.html',
-      target: '_blank',
+      isWebGame: true, 
+      gameTitle: GAME_TITLES.BRICK_BREAKER,
+      onClick: () => { setActiveGame(!activeGame); setCurrGameName(GAME_TITLES.BRICK_BREAKER); }
     },
   ]
+
+  const renderProductButton = (project) => {
+
+    let toggleGame = false;
+
+    if (project.isWebGame) { // if project is a web game
+
+      //if project game title diff than curr game name + game is active
+      if (project.gameTitle !== currGameName && activeGame) {
+        //dont inactivate the game
+        toggleGame = false;
+      }
+      //if game title same as curr game name or game inactive
+      else { 
+        toggleGame = true;
+      }
+
+      const onClick = () => {
+        if (toggleGame) {
+          setActiveGame(!activeGame);
+        }
+
+        setCurrGameName(project.gameTitle);
+      }
+      
+      if (activeGame) { /* if web game is active, deactivate it or swap games */
+        return <a href='#games' onClick={onClick} className='btn btn-primary' rel="noreferrer">Product</a>
+      }
+      else { /* if web game isn't active, activate it */
+        return <a onClick={onClick} className='btn btn-primary' rel="noreferrer">Product</a>
+      }
+    }
+    else { /* if project isn't a web game */
+      return <a href={project.product} className='btn btn-primary' target="_blank" rel="noreferrer">Product</a>
+    }
+
+  }
 
   return (
     <div>
@@ -73,16 +113,16 @@ const Portfolio = () => {
         <h2>Portfolio</h2>
         <div className='container portfolio__container'>
           {
-            portfolioItems.map(({ id, image, title, github, product, target, onClick }) => {
+            portfolioItems.map((project, index) => {
               return (
-                <article key={id} className='portfolio__item'>
+                <article key={index} className='portfolio__item'>
                   <div className='portfolio__item-image'>
-                    <img src={image} alt={title} />
+                    <img src={project.image} alt={project.title} />
                   </div>
-                  <h3>{title}</h3>
+                  <h3>{project.title}</h3>
                   <div className='portfolio__item-cta'>
-                    <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
-                    <a href={product} onClick={onClick} className='btn btn-primary' target={target} rel="noreferrer">Product</a>
+                    <a href={project.github} className='btn' target='_blank' rel="noreferrer">Github</a>
+                    {renderProductButton(project)}
                   </div>
                 </article>
               )
@@ -95,7 +135,7 @@ const Portfolio = () => {
         className={`${activeGame ? 'game-shown' : 'game-hidden'}`}
       > 
         {activeGame &&
-          < Games />
+          < Games gameName={currGameName} GAME_TITLES={GAME_TITLES}/>
         }
 
       </div>

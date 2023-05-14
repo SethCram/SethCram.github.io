@@ -76,9 +76,14 @@ section > h2 {
     color: var(--color-light);
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     color: var(--color-primary);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 a:hover {

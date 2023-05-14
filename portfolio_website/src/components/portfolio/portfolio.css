@@ -36,9 +36,9 @@
     margin-bottom: 1rem;
 }
 
-.portfolio__item-cta a {
+.portfolio__item-cta a, portfolio__item-cta button {
     text-align: center;
-    margin: 0 1rem 0 1rem;
+    margin: 1rem;
 }
 
 /* GAME TAGS*/
