@@ -21,12 +21,11 @@ const Work_History = () => {
       id: 1,
       logo: Micron,
       name: 'Micron Technology',
-      position: 'IT Software Engineer',
+      position: 'Fullstack Software Engineer',
       description: [
-        'Followed the Agile software development methodology within a team of 20 developers.',
-        'Converted a C# .NET Core Windows command line application into an API running on Linux.',
-        'Deployed a Linux API to Red Hat OpenShift utilizing Docker.',
-        'Trained in an XML/JSON-based distributed communications system',
+        'Produced seamless API patches following the Agile methodology.',
+        'Containerized a .NET Core API and deployed it to Linux for 24/7 availability.',
+        'Broadcasted essential information through an XML/JSON-based distributed communications system.',
       ]
     },
     {
@@ -35,9 +34,9 @@ const Work_History = () => {
       name: 'University of Idaho',
       position: 'Communications Officer',
       description: [
-        'Networked with High Schools across the Northwest to garner excitement for a career in STEM.',
-        'Articulated technical challenges and solutions to non-technical people.',
-        'Assisted in leading a group of nearly 30 engineers.'
+        'Championed leadership of nearly 30 engineers to encourage student excitement in STEM.',
+        'Expertly networked with teachers and faculty from High Schools across the Northwest.',
+        'Compellingly conveyed technical challenges and solutions to non-technical people.'
       ]
     }
   ]
@@ -63,11 +62,11 @@ const Work_History = () => {
                 <h6 className='company__name' >{name}</h6>
                 <h5 className='company__position'>{position}</h5>
                   <small className='company__description'>
-                  <ul>
+                  <ul className='company__list'>
                     {
                       description.map((sentence, index) => {              
                         return (
-                          <li key={index}>{sentence}</li>
+                          <li className='company__list__element' key={index}>{sentence}</li>
                         )
                       }
                       )

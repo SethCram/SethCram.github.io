@@ -31,16 +31,6 @@ const Portfolio = () => {
       product: 'https://sethcram.pythonanywhere.com/BestBuySearch/login/',
       target: '_blank',
     },
-    /*
-    {
-      id: 2,
-      image: Website,
-      title: 'React Portolio Website',
-      github: 'https://github.com/SethCram/SethCram.github.io',
-      product: 'https://sethcram.github.io/',
-      target: '_blank',
-    },
-    */
     {
       id: 3,
       image: Linguists_Client,

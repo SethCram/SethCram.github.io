@@ -12,6 +12,21 @@
     border: 0.45rem solid var(--color-primary-variant);
 }
 
+.company__list{
+    list-style: none;
+}
+
+.company__list__element{
+    text-align: left;
+}
+
+.company__list__element::before{
+    content: '➤';
+    /*margin-right: 1rem;*/
+    position: absolute;
+    left: 3rem;
+}
+
 .swiper-pagination-bullet-clickable .swiper-pagination-bullet-active {
     background: var(--color-bg);
 }
@@ -57,5 +72,9 @@
 
     .company__description {
         width: var(--container-width-sm);
+    }
+
+    .company__list__element::before{
+        left: 1.5rem;
     }
 }
