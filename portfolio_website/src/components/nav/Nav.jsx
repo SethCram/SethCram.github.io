@@ -11,14 +11,28 @@ import { useState } from 'react' /*considered a 'hook'*/
 //could make an navbar icon comp w/ onClick events so don't need copy + paste
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#') /* var=activeNav, setActiveNav=funct */
+
+  //needa manually change hashcode to none for '#' nav
+
+  React.useEffect(() => { /* Only ever fires once */
+    function updateNav() {
+      //console.log(window.location.hash);
+      setActiveNav(window.location.hash);
+    }
+    window.addEventListener('hashchange', updateNav);
+
+    // cleanup this component
+    return () => window.removeEventListener('hashchange', updateNav);
+  }, []);
+
   return (
     <nav>
       <a onClick={() => { setActiveNav('#'); window.scrollTo(0, 0); }} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
-      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><AiOutlineFolder /></a>
-      <a href="#work_history" onClick={() => setActiveNav('#work_history')} className={activeNav === '#work_history' ? 'active' : ''}><RiServiceLine /></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      <a href="#about" className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
+      <a href="#experience" className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
+      <a href="#portfolio" className={activeNav === '#portfolio' ? 'active' : ''}><AiOutlineFolder /></a>
+      <a href="#work_history" className={activeNav === '#work_history' ? 'active' : ''}><RiServiceLine /></a>
+      <a href="#contact" className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
     </nav>
   )
 }
