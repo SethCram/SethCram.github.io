@@ -7,12 +7,7 @@ import {ImStackoverflow} from 'react-icons/im'
 function CreateListLink({link, linkName}) {
   return (
     <li>
-      {link ? /* if link available, render it */
-        <a href={link}>{linkName}</a>
-        : /* if link not available, assume wanna scroll to top*/
-        <a onClick={() => window.scrollTo(0, 0)}>{linkName}</a>
-      }
-      
+      <a href={link}>{linkName}</a>
     </li>
   )
 }
@@ -20,9 +15,10 @@ function CreateListLink({link, linkName}) {
 const Footer = () => {
   return (
     <footer>
-      <a onClick={() => {window.scrollTo(0, 0)}} className='footer__logo'>Seth Cram</a>
+      <a href="#home" className='footer__logo'>Seth Cram</a>
       <ul className='permalinks'>
         <CreateListLink
+          link="#home"
           linkName="Home"
         />
         <CreateListLink 

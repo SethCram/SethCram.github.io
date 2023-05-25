@@ -17,8 +17,6 @@ const Portfolio = () => {
     BRICK_BREAKER: 2,
   }
   const [currGameName, setCurrGameName] = useState(0); 
-
-  console.log(currGameName);
   
   const portfolioItems = [
     {

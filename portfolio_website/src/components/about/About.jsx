@@ -34,7 +34,7 @@ const About = () => {
           </div>
           <p>
             Hello, I am Seth Cram, a driven Software Engineer with experience in a variety of frontend and backend programming languages and technologies.
-            I recently graduated with a Bachelor's of Science in Computer Engineering, boasting a GPA of 3.94.
+            I recently graduated with a Bachelor's of Science in Computer Engineering, boasting a GPA of 3.94 with Magna Cum Laude honors.
             As a Fullstack Software Engineer at Micron Technology, I followed the Agile software development methodology and seamlessly integrated new API features.
             I also excelled as a Communications Officer at the University of Idaho, where I efficiently coordinated the independent operation of several groups of Engineers.
           </p>
