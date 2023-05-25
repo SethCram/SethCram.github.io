@@ -12,11 +12,17 @@ import { useState } from 'react' /*considered a 'hook'*/
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#home') /* var=activeNav, setActiveNav=funct */
 
-  //needa manually change hashcode to none for '#' nav
+  //init hashcode if website loaded with one in url
+  React.useEffect(() => { 
+    if (window.location.hash) {
+      setActiveNav(window.location.hash);
+    }
+  }, []);
 
-  React.useEffect(() => { /* Only ever fires once */
+  //update active icon on navbar when hashcode changes
+  React.useEffect(() => {
     function updateNav() {
-      //console.log(window.location.hash);
+      console.log(window.location);
       setActiveNav(window.location.hash);
     }
     window.addEventListener('hashchange', updateNav);

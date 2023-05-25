@@ -4,8 +4,6 @@ import './games.css'
 /* {} indicated in JS mode */
 /* blank target opens inna new tab */
 const Games = ({ gameName, GAME_TITLES }) => {
-
-  console.log(gameName);
   
   const renderGame = () => {
     switch(gameName) {

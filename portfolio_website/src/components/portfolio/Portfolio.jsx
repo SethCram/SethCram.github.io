@@ -6,7 +6,7 @@ import Linguists_Client from '../../assets/Linguists_Client.PNG'
 import Brick_Breaker from '../../assets/brick_breaker.PNG'
 import FT13_Game from '../../assets/FT13.PNG'
 import Games from '../games/Games.jsx'
-import { useState } from 'react' 
+import { useEffect, useState } from 'react' 
 
 /* {} indicated in JS mode */
 /* blank target opens inna new tab */
@@ -47,7 +47,7 @@ const Portfolio = () => {
       github: 'https://github.com/SethCram/Friday-the-13th-Game',
       product: `https://drive.google.com/drive/folders/1rkJ1HrhBPyzCM6HnGW3mtzlJ1LLmHoAJ?usp=sharing`, //'#games', 
     },
-    {
+    { // ?game=1#games
       id: 5,
       image: Dungeon_Jump,
       title: 'Variable-Perspective Adventure Game',
@@ -56,7 +56,7 @@ const Portfolio = () => {
       gameTitle: GAME_TITLES.DUNGEON_JUMP,
       onClick: () => { setActiveGame(!activeGame); setCurrGameName(GAME_TITLES.DUNGEON_JUMP);}, //invert active state of iframe code onclick()
     },
-    {
+    { // ?game=2#games
       id: 6,
       image: Brick_Breaker,
       title: 'Breakout Variant & Gaming AI',
@@ -66,6 +66,34 @@ const Portfolio = () => {
       onClick: () => { setActiveGame(!activeGame); setCurrGameName(GAME_TITLES.BRICK_BREAKER); }
     },
   ]
+
+  //update & activate game if queried for 
+  useEffect(() => {
+    function updateGame() {
+      let currGame;
+      const gameNumber = Number(window.location.search.split("=")[1]);
+
+      switch (gameNumber) {
+        case GAME_TITLES.DUNGEON_JUMP:
+          currGame = GAME_TITLES.DUNGEON_JUMP;
+          break;
+        case GAME_TITLES.BRICK_BREAKER:
+          currGame = GAME_TITLES.BRICK_BREAKER;
+          break;
+        default:
+          currGame = currGameName;
+          break;
+      }
+
+      //if game should actually be updated
+      if (currGame !== currGameName) {
+        setCurrGameName(currGame);
+        setActiveGame(true);
+      }
+    }
+    updateGame();
+    
+  }, []);
 
   const renderProductButton = (project) => {
 
@@ -133,7 +161,7 @@ const Portfolio = () => {
         className={`${activeGame ? 'game-shown' : 'game-hidden'}`}
       > 
         {activeGame &&
-          < Games gameName={currGameName} GAME_TITLES={GAME_TITLES}/>
+          <Games gameName={currGameName} GAME_TITLES={GAME_TITLES}/>
         }
 
       </div>
