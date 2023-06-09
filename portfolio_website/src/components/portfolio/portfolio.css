@@ -32,6 +32,8 @@
 
 .portfolio__item__list {
     list-style: none;
+    color: var(--color-light);
+    font-weight: 300;
 }
 
 .portfolio__item__list__element {
