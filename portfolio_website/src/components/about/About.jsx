@@ -1,15 +1,25 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/me_about.png'
-import { FaAward } from 'react-icons/fa'
+import { FaAward, FaBriefcase } from 'react-icons/fa'
 import { AiOutlineFolder } from 'react-icons/ai'
 
-function AboutCard({ icon, title, description }){
+function AboutCard({ icon, title, description }) {
+
+
     return (
       <article className='about__card'>
         {icon}
         <h5>{title}</h5>
-        <small>{description}</small>
+        <ul>
+          {description.split( /[\\.!?]/ ).map((sentence, i) => (
+              <li key={i}>
+                <small>
+                  {sentence}
+                </small>
+              </li>
+          ))}
+        </ul>
       </article>
     )
 }
@@ -29,12 +39,13 @@ const About = () => {
 
         <div className='about__content'>
           <div className='about__cards'>
-            <AboutCard icon=<FaAward className='about__icon'/> title='Experience' description={'1 Internship'} />
+            <AboutCard icon=<FaAward className='about__icon'/> title='Education' description={"Bachelor of Science. Computer Engineering"} />
+            <AboutCard icon=<FaBriefcase className='about__icon'/> title='Experience' description={'1 Internship'} />
             <AboutCard icon=<AiOutlineFolder className='about__icon'/> title='Projects' description={'30+ Completed'} />
           </div>
           <p>
             Hello, I am Seth Cram, a driven Software Engineer with experience in a variety of frontend and backend programming languages and technologies.
-            I recently graduated with a Bachelor's of Science in Computer Engineering, boasting a GPA of 3.94 with Magna Cum Laude honors.
+            I recently graduated with a Bachelor of Science in Computer Engineering, boasting a GPA of 3.94 with Magna Cum Laude honors.
             As a Fullstack Software Engineer at Micron Technology, I followed the Agile software development methodology and seamlessly integrated new API features.
             I also excelled as a Communications Officer at the University of Idaho, where I efficiently coordinated the independent operation of several groups of Engineers.
           </p>
