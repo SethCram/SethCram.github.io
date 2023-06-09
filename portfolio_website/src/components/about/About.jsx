@@ -11,15 +11,9 @@ function AboutCard({ icon, title, description }) {
       <article className='about__card'>
         {icon}
         <h5>{title}</h5>
-        <ul>
-          {description.split( /[\\.!?]/ ).map((sentence, i) => (
-              <li key={i}>
-                <small>
-                  {sentence}
-                </small>
-              </li>
-          ))}
-        </ul>
+        <small>
+          {description}
+        </small>
       </article>
     )
 }
@@ -39,7 +33,7 @@ const About = () => {
 
         <div className='about__content'>
           <div className='about__cards'>
-            <AboutCard icon=<FaAward className='about__icon'/> title='Education' description={"Bachelor of Science. Computer Engineering"} />
+            <AboutCard icon=<FaAward className='about__icon'/> title='Education' description={"Bachelor of Science"} />
             <AboutCard icon=<FaBriefcase className='about__icon'/> title='Experience' description={'1 Internship'} />
             <AboutCard icon=<AiOutlineFolder className='about__icon'/> title='Projects' description={'30+ Completed'} />
           </div>
