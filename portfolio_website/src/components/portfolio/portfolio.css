@@ -85,6 +85,7 @@
 
 .hideCarrot {
     width: 0; /* hide dimensions too */
+    transition: all 200ms ease !important;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES)  */

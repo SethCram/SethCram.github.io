@@ -6,7 +6,7 @@
 
 .about__me {
     width: 100%;
-    aspect-ratio: 1/1.5; /* newly added*/
+    aspect-ratio: 1/1; /* newly added*/
     border-radius: 2rem;
     background: linear-gradient(
         45deg, 
@@ -16,7 +16,7 @@
     );
     display: grid;
     place-items: center;
-    max-width: 70%; /* newly added*/
+    max-width: 80%; /* newly added*/
 }
 
 .about__me-image {
@@ -29,7 +29,7 @@
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
-    aspect-ratio: 1/1.5; /* newly added*/
+    aspect-ratio: 1/1; /* newly added*/
     transition: var(--transition); /* for slower and smoother transition */
     max-height: 100%; /* newly added*/
 }
