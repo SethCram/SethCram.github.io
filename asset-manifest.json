@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0467e34.css",
-    "main.js": "/static/js/main.87036fb0.js",
+    "main.js": "/static/js/main.05887bfc.js",
     "static/media/Book_Club.PNG": "/static/media/Book_Club.62a343e3029c27ac0bde.PNG",
     "static/media/Dungeon_Jump.png": "/static/media/Dungeon_Jump.8a015b97882485e34085.png",
     "static/media/FT13.PNG": "/static/media/FT13.b1cc2ce062d27b4770de.PNG",
@@ -14,10 +14,10 @@
     "static/media/brick_breaker.PNG": "/static/media/brick_breaker.0a0a2f217ca117350076.PNG",
     "index.html": "/index.html",
     "main.a0467e34.css.map": "/static/css/main.a0467e34.css.map",
-    "main.87036fb0.js.map": "/static/js/main.87036fb0.js.map"
+    "main.05887bfc.js.map": "/static/js/main.05887bfc.js.map"
   },
   "entrypoints": [
     "static/css/main.a0467e34.css",
-    "static/js/main.87036fb0.js"
+    "static/js/main.05887bfc.js"
   ]
 }
