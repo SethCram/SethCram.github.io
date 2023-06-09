@@ -30,6 +30,29 @@
     /*text-align: center;*/
 }
 
+.portfolio__item__list {
+    list-style: none;
+}
+
+.portfolio__item__list__element {
+    text-align: left;
+    margin-left: 1rem;
+    display: flex;
+    padding: 0.2rem;
+    margin: 0.1rem;
+
+    /*overflow: hidden; 
+    transition: all .5s ease-in-out;*/
+}
+
+.portfolio__item__list__bullet {
+    margin-right: 1rem;
+}
+
+.portfolio__item__list__sentence {
+    padding-top: 0.1rem;
+}
+
 .portfolio__item-cta {
     /*display: flex;*/
     /*gap: 1rem;*/
@@ -41,19 +64,25 @@
     margin: 1rem;
 }
 
-/* GAME TAGS*/
 
-.game-shown {
+
+/* DISPLAY TAGS*/
+
+.show {
     opacity: 1;
     transition: var(--transition);
     visibility: visible;
 }
 
-.game-hidden {
+.hide {
     opacity: 0;
-    transition: var(--transition);
+    transition: var(--quick-transition);
     visibility: hidden;
-    height: 0;
+    height: 0; /* hide dimensions too */
+}
+
+.hideCarrot {
+    width: 0; /* hide dimensions too */
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES)  */
