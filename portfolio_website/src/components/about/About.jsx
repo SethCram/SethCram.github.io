@@ -41,7 +41,7 @@ const About = () => {
           <p>
             Several impressive projects bear my mark, including a Reputation Based Writing Platform, Database Natural Language Interface, and Breakout Gaming AI.
             These projects involved designing, implementing, and deploying innovative websites and cutting-edge Machine Learning models.
-            Additionally, I personally excel at learning, communicating, and collaborating in a team setting and am always eager to learn new technologies and programming languages.
+            Additionally, I personally excel at learning, communicating, and collaborating in team setting and am always eager to learn new technologies and programming languages.
             {/*I'm a Software Engineer well-versed in various frontend and backend technologies. 
             Proficient in a wide variety of programming languages with comprehensive understanding of efficient algorithms, data structures, and fullstack development. 
             More than capable of producing excellence in a competitive environment. */}
