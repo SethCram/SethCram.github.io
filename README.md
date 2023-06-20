@@ -1,7 +1,8 @@
 # SethCram.github.io
-Seth Cram's professional portfolio
+Seth Cram's professional portfolio that includes a downloadable resume, social media links, summary, skills, impactful projects, work history, and a contact form. Boasts a responsive and flexible UI built with React and Node.js. 
 
-[See the website](https://sethcram.github.io/)
+## See the website
+[![Portfolio](/images/website1.PNG)](https://sethcram.github.io/)
 
 ## Developer Notes
 ### Developer Setup
