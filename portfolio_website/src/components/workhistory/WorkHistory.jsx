@@ -23,9 +23,9 @@ const Work_History = () => {
       name: 'Micron Technology',
       position: 'Fullstack Software Engineer',
       description: [
-        'Produced seamless API patches following the Agile methodology',
-        'Containerized a .NET Core API and deployed it to Linux for 24/7 availability',
-        'Crafted several CI/CD pipelines to automate API testing, building, and deployment',
+        'Spearheaded seamless API patches for a Fortune 500 company following the Agile methodology.',
+        'Containerized .NET Core APIs and deployed them to Linux for 24/7 availability.',
+        'Crafted several CI/CD pipelines to automate API testing, building, and deployment.',
       ]
     },
     {
@@ -34,9 +34,9 @@ const Work_History = () => {
       name: 'University of Idaho',
       position: 'Communications Officer',
       description: [
-        'Championed leadership of nearly 30 engineers to encourage student excitement in STEM',
-        'Established connections with high school teachers and faculty to promote technical education',
-        'Compellingly conveyed technical challenges and solutions to non-technical people'
+        'Championed leadership of an engineering group to inspire student interest in STEM fields.',
+        'Established connections with high school teachers and faculty to promote technical education.',
+        'Compellingly conveyed technical concepts to non-technical audiences.'
       ]
     }
   ]
