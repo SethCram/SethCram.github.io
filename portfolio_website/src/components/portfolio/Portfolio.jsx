@@ -25,7 +25,7 @@ const Portfolio = () => {
       details: "Architected and implemented an innovative website using the MERN stack. Constructed a high-speed REST API to interface with a NoSQL database. Brought forth a flexible and responsive UI with a novel reputation system.",
       activeDetails: false,
       github: 'https://github.com/SethCram/book-club',
-      product: 'https://book-club.us.to/',
+      product: 'https://github.com/SethCram/book-club', //https://book-club.us.to/
     },
     {
       image: BestBuySearch,
